@@ -6,10 +6,10 @@ const Card = ({ item }) => {
       : "";
 
   return (
-    <article className="w-[300px] border border-solid border-black">
-      <img className="flag" src={item.flags?.png} alt={`${item.name?.common} flag`} />
-      <article className="card_body">
-        <h2 className="title">{item.name?.common}</h2>
+    <article className="w-[300px] flex flex-col gap-y-[15px] border border-solid border-black p-[15px] rounded-2xl">
+      <img className="h-[150px] object-contain" src={item.flags?.png} alt={`${item.name?.common} flag`} />
+      <article className="flex flex-col gap-y-[10px]">
+        <h2 className="font-bold text-xl">{item.name?.common}</h2>
         <p className="population">Population: {item.population.toLocaleString()}</p>
         <p className="region">Region: {item?.region}</p>
         <p className="capital">Capital: {item?.capital}</p>

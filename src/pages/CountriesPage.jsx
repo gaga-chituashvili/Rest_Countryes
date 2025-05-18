@@ -1,10 +1,12 @@
-import React from 'react'
-import Countries from '../component/Countries'
+import React from "react";
+import Countries from "../component/Countries";
 
 const CountriesPage = () => {
   return (
-    <Countries/>
-  )
-}
+    <>
+      <Countries />
+    </>
+  );
+};
 
-export default CountriesPage
+export default CountriesPage;

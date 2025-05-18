@@ -16,9 +16,9 @@ const Countries = () => {
     
     
   return (
-    <section className=''>
-      {data.map((country) => (
-        <Card key={country.id} item={country} />
+    <section className='flex flex-wrap justify-center gap-[20px]'>
+      {data.map((country,index) => (
+        <Card key={index} item={country} />
       ))}
     </section>
   );
