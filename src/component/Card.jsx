@@ -1,12 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { routes } from '../constant/route';
 
 const Card = ({ item }) => {
+  const navigate=useNavigate()
    const languages = item.languages
       ? Object.values(item.languages).join(" , ")
       : "";
 
   return (
-    <article className="w-[300px] flex flex-col gap-y-[15px] border border-solid border-black p-[15px] rounded-2xl">
+    <article onClick={()=>navigate(routes.details)} className="w-[300px] flex flex-col gap-y-[15px] border border-solid border-black p-[15px] rounded-2xl cursor-pointer">
       <img className="h-[150px] object-contain" src={item.flags?.png} alt={`${item.name?.common} flag`} />
       <article className="flex flex-col gap-y-[10px]">
         <h2 className="font-bold text-xl">{item.name?.common}</h2>
