@@ -4,7 +4,7 @@ import Header from "./component/Header";
 
 function App() {
   return (
-    <div className="flex flex-col gap-y-[20px]">
+    <div className="flex flex-col gap-y-[20px] dark:bg-slate-500">
       <Header />
      <AppRoutes/>
     </div>

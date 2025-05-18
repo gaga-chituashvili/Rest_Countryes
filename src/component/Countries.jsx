@@ -50,13 +50,13 @@ const Countries = () => {
 
   return (
     <section className="flex flex-col gap-y-[20px]">
-      <section className="flex justify-between flex-wrap gap-4 items-center">
+      <section className="flex justify-between flex-wrap gap-4 items-center px-10">
         <div className="relative w-[300px]">
           <input
             value={searchInput}
             onChange={handleSearchChange}
             placeholder="Search for a country..."
-            className="w-full h-[50px] pl-10 pr-4 border border-solid border-black rounded-2xl"
+            className="w-full h-[50px] pl-10 pr-4 border border-solid border-black rounded-2xl dark:placeholder-white dark:bg-slate-400"
           />
           <img
             src={search}
@@ -66,10 +66,9 @@ const Countries = () => {
         </div>
 
         <select
-          id="filter"
           onChange={handleRegionChange}
           value={regionFilter}
-          className="h-[50px] px-4 border border-solid border-black rounded-2xl"
+          className="h-[50px] px-4 border border-solid border-black rounded-2xl dark:bg-slate-500"
         >
           <option value="">Filter by region</option>
           <option value="Africa">Africa</option>
