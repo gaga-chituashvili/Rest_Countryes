@@ -49,7 +49,7 @@ const Countries = () => {
   });
 
   return (
-    <section className="flex flex-col gap-y-[20px]">
+    <section className="flex flex-col gap-y-[20px] h-screen">
       <section className="flex justify-between flex-wrap gap-4 items-center px-10">
         <div className="relative w-[300px]">
           <input

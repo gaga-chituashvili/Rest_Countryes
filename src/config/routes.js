@@ -4,7 +4,7 @@ import DetailsPage from "../pages/DetailsPage"
 
 const approutes = [
   { path: routes.home, Component: CountriesPage },
-  { path: routes.details, Component: DetailsPage },
+  { path: routes.detailsPath, Component: DetailsPage },
 ];
 
 export default approutes;

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../constant/route";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -17,9 +19,11 @@ const Header = () => {
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
+  const navigate = useNavigate()
+
   return (
-    <header className="flex justify-between items-center h-[100px] px-7 shadow-lg bg-white dark:bg-gray-600">
-      <span className="font-bold text-3xl text-black dark:text-white">
+    <header className="flex justify-between items-center h-[100px] px-7 shadow-lg bg-white dark:bg-gray-600 cursor-pointer">
+      <span onClick={()=>navigate(routes.home)} className="font-bold text-3xl text-black dark:text-white">
         Where in the world?
       </span>
       <div
