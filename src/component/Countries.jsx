@@ -71,7 +71,7 @@ const Countries = () => {
   value={regionFilter}
   className="w-full max-w-xs h-[50px] px-4 bg-white dark:bg-slate-700 text-gray-800 dark:text-white border border-gray-300 dark:border-slate-500 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 placeholder-gray-400"
 >
-  <option value="" disabled>
+  <option value="">
     Filter by region
   </option>
   <option value="Africa">Africa</option>

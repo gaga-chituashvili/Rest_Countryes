@@ -1,3 +1,4 @@
+import "./reset.css"
 import "./App.css";
 import AppRoutes from "./AppRoutes";
 import Header from "./component/Header";

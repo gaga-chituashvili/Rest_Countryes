@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-between items-center h-[100px] px-7 shadow-lg bg-white dark:bg-gray-600 cursor-pointer ${
+      className={`header fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-between items-center h-[100px] px-7 shadow-lg bg-white dark:bg-gray-600 cursor-pointer ${
         visible ? "opacity-100 translate-y-0" : "-translate-y-full opacity-0"
       }`}
     >
