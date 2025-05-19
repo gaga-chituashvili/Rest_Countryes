@@ -25,7 +25,7 @@ const Details = () => {
         onClick={() => navigate(-1)}
         className="mb-6 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
       >
-        ← უკან
+        ← Back
       </button>
       <section className="flex gap-x-10 items-center">
         <img
@@ -34,7 +34,7 @@ const Details = () => {
           className="w-[800px] h-[400x] object-cover rounded "
         />
         <section className="flex flex-col gap-y-[30px]">
-          <h2 className="font-bold text-[30px]">{country.name?.common}</h2>
+          <h2 className="font-bold text-[30px] dark:text-white">{country.name?.common}</h2>
            <section className="flex gap-x-20">
            <article className="flex flex-col gap-y-4">
           <span className="dark:text-white"><strong>Native Name: </strong>{country.name?.common}</span>
