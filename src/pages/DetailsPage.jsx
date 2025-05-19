@@ -1,10 +1,8 @@
-import React from 'react'
-import Details from '../component/Details'
+import React from "react";
+import Details from "../component/Details";
 
 const DetailsPage = () => {
-  return (
-   <Details/>
-  )
-}
+  return <Details />;
+};
 
-export default DetailsPage
+export default DetailsPage;

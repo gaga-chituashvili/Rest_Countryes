@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { routes } from '../constant/route';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../constant/route";
 
 const Card = ({ item }) => {
   const navigate = useNavigate();
@@ -19,11 +19,22 @@ const Card = ({ item }) => {
         alt={`${item.name?.common} flag`}
       />
       <article className="flex flex-col gap-y-[10px]">
-        <h2 className="font-bold text-xl dark:text-white">{item.name?.common}</h2>
-        <span className=" dark:text-white"><strong className='font-bold'>Population:</strong> {item.population.toLocaleString()}</span>
-        <span className=" dark:text-white"><strong className='font-bold'>Region: </strong> {item?.region}</span>
-        <span className="dark:text-white"><strong className='font-bold'>Capital: </strong> {item?.capital}</span>
-        <span className="dark:text-white"><strong className='font-bold'>Languages: </strong> {languages}</span>
+        <h2 className="font-bold text-xl dark:text-white">
+          {item.name?.common}
+        </h2>
+        <span className=" dark:text-white">
+          <strong className="font-bold">Population:</strong>{" "}
+          {item.population.toLocaleString()}
+        </span>
+        <span className=" dark:text-white">
+          <strong className="font-bold">Region: </strong> {item?.region}
+        </span>
+        <span className="dark:text-white">
+          <strong className="font-bold">Capital: </strong> {item?.capital}
+        </span>
+        <span className="dark:text-white">
+          <strong className="font-bold">Languages: </strong> {languages}
+        </span>
       </article>
     </article>
   );

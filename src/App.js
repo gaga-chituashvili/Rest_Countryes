@@ -1,4 +1,4 @@
-import "./reset.css"
+import "./reset.css";
 import "./App.css";
 import AppRoutes from "./AppRoutes";
 import Header from "./component/Header";
@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="flex flex-col gap-y-[20px] dark:bg-slate-500">
       <Header />
-     <AppRoutes/>
-     <ScrollUp/>
+      <AppRoutes />
+      <ScrollUp />
     </div>
   );
 }

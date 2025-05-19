@@ -23,22 +23,21 @@ const Header = () => {
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const threshold = 5; 
+      const threshold = 5;
 
       if (
         prevScrollPos < currentScrollPos &&
         currentScrollPos - prevScrollPos > threshold
       ) {
-        setVisible(false); 
+        setVisible(false);
       } else if (
         prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > threshold
       ) {
-        setVisible(true); 
+        setVisible(true);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -59,7 +58,7 @@ const Header = () => {
     >
       <span
         onClick={() => navigate(routes.home)}
-        className="font-bold text-3xl text-black dark:text-white"
+        className="font-bold text-3xl text-black dark:text-white [@media(max-width:411px)]:text-[20px]"
       >
         Where in the world?
       </span>
@@ -78,4 +77,3 @@ const Header = () => {
 };
 
 export default Header;
-
