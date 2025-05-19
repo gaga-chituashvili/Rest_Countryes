@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const storedDarkMode = localStorage.getItem("darkMode");
+    return storedDarkMode === "true";
+  });
 
   useEffect(() => {
     if (darkMode) {
@@ -9,6 +12,7 @@ const Header = () => {
     } else {
       document.documentElement.classList.remove("dark");
     }
+     localStorage.setItem("darkMode", darkMode.toString());
   }, [darkMode]);
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
@@ -26,7 +30,7 @@ const Header = () => {
           className={`w-[22px] h-[22px] bg-slate-900 rounded-full absolute top-[4px] transition-transform duration-300 ${
             darkMode ? "translate-x-[30px]" : "translate-x-0"
           }`}
-        ></span>
+        />
       </div>
     </header>
   );
